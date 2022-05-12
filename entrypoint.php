@@ -10,6 +10,9 @@ require_once __DIR__ . '/src/autoload.php';
 
 note('Resolving configuration...');
 
+var_dump(getenv());
+die();
+
 $configFactory = new ConfigFactory();
 try {
     $config = $configFactory->create(getenv());
